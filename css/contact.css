@@ -1,0 +1,143 @@
+/* 联系我们相关页 样式 */
+/* 工作机会 start */
+.contact_main .contact-container {
+  padding: 90px 0 120px;
+}
+.contact_main .contact-container .left-nav {
+  position: relative;
+  float: left;
+  margin-right: 45px;
+  width: 235px;
+  border: solid 1px #e1e1e1;
+  border-radius: 3px 3px 0px 0px;
+}
+.contact_main .contact-container .left-nav .title {
+  height: 44px;
+  line-height: 44px;
+  padding: 0 10px;
+  font-size: 18px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  background-color: #ef6d01;
+}
+.contact_main .contact-container .left-nav .title img {
+  vertical-align: middle;
+  margin-right: 8px;
+}
+.contact_main .contact-container .left-nav .title .txt {
+  vertical-align: middle;
+}
+.contact_main .contact-container .left-nav .nav-hd .nav-tab {
+  height: 44px;
+  line-height: 44px;
+  padding: 0 13px;
+  font-family: HiraginoSansGB-W3;
+  font-size: 16px;
+  color: #999999;
+  cursor: pointer;
+}
+.contact_main .contact-container .left-nav .nav-hd .nav-tab:nth-child(1),
+.contact_main .contact-container .left-nav .nav-hd .nav-tab:nth-child(2) {
+  border-bottom: solid 1px #e1e1e1;
+}
+.contact_main .contact-container .left-nav .nav-hd .nav-tab .tab-icon {
+  margin-right: 10px;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: url("../img/icon3.png") no-repeat;
+  background-size: cover;
+  vertical-align: middle;
+}
+.contact_main .contact-container .left-nav .nav-hd .nav-tab .tab-txt {
+  vertical-align: middle;
+}
+.contact_main .contact-container .left-nav .nav-hd .nav-tab-cur .tab-icon {
+  background: url("../img/icon9.png") no-repeat;
+}
+.contact_main .contact-container .left-nav .nav-hd .nav-tab-cur .tab-txt {
+  color: #ef6d01;
+}
+.contact_main .contact-container .left-nav .pic {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  transform: translateY(-100%);
+}
+.contact_main .contact-container .nav-bd {
+  float: left;
+  width: 920px;
+}
+.contact_main .contact-container .nav-bd .bd-item {
+  position: relative;
+  display: none;
+}
+.contact_main .contact-container .nav-bd .bd-item .title {
+  font-size: 24px;
+  line-height: 1em;
+  letter-spacing: 0px;
+  color: #ef6d01;
+}
+.contact_main .contact-container .nav-bd .bd-item > p {
+  font-family: PingFang-SC-Medium, PingFang-SC-Regular;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0px;
+  color: #666666;
+}
+.contact_main .contact-container .nav-bd .bd-item .job-desc {
+  margin-top: 20px;
+}
+.contact_main .contact-container .nav-bd .bd-item .m_t {
+  margin-top: 36px;
+}
+.contact_main .contact-container .nav-bd .bd-item-cur {
+  display: block;
+}
+/* 工作机会 end */
+/* 联系我们 start */
+.contact_main .info-container {
+  padding: 60px 0 100px;
+}
+.contact_main .info-container .title {
+  font-family: PingFang-SC-Bold;
+  font-size: 36px;
+  line-height: 1em;
+  letter-spacing: 0px;
+  color: #333333;
+  text-align: center;
+}
+.contact_main .info-container .subtitle {
+  margin-top: 20px;
+  font-size: 24px;
+  line-height: 1em;
+  letter-spacing: 0px;
+  color: #999;
+  text-align: center;
+}
+.contact_main .contact-info {
+  margin-top: 50px;
+}
+.contact_main .contact-info .left-info {
+  float: left;
+  width: 600px;
+  line-height: 40px;
+  font-size: 24px;
+  letter-spacing: 0px;
+  color: #333;
+}
+.contact_main .contact-info .left-info > p .key {
+  margin-right: 5px;
+  color: #ef6d01;
+}
+.contact_main .contact-info .left-info .m_t {
+  margin-top: 40px;
+}
+.contact_main .contact-info .right-pic {
+  float: right;
+  margin-top: 30px;
+}
+.contact_main .contact-info .right-pic > img {
+  width: 100%;
+}
+/* 联系我们 end */

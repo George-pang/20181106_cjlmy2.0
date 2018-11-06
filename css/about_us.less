@@ -1,0 +1,386 @@
+/* 关于长颈鹿页样式 start */
+.f_l{
+    float: left;
+}
+.f_r{
+    float: right;
+}
+// @media 可以针对不同的屏幕尺寸设置不同的样式
+@media screen and (max-width: 1920px) {
+    .aside-nav {
+        left: 10px!important;
+    }
+    .szll{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 1920px) {
+    .szll{
+        width: 1920px;
+        margin: 0 auto;
+    }
+}
+.about_main{
+    position: relative;
+    .aside-nav{
+        position: absolute;
+        top: 130px;
+        // left: 137px;
+        left: 100px;
+        width: 140px;
+        // border: solid 1px #e1e1e1;
+        .pic{
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translateY(-100%);
+        }
+        .nav-tab{
+            width: 140px;
+            height: 44px;
+            padding: 0 15px;
+            line-height: 44px;
+            background-color: #fff;
+            border:solid 1px #e1e1e1;
+            border-bottom: none;
+            cursor: pointer;
+            &:nth-child(4){
+                border-bottom: solid 1px #e1e1e1;
+            }
+            .sjx{
+                display: inline-block;
+                margin-right: 5px;
+                width: 8px;
+                height: 8px;
+                background: url("../img/icon3.png")no-repeat;
+                background-size: cover;
+                vertical-align: middle;
+            }
+            .tab{
+                font-family: HiraginoSansGB-W3;
+                font-size: 16px;
+                letter-spacing: 0px;
+                color: #999;
+                vertical-align: middle;
+            }
+        }
+        .nav-tab-cur{
+            background-color: #ef6d01;
+            .sjx{
+                background: url("../img/icon4.png")no-repeat;
+            }
+            .tab{
+                font-size: 18px;
+                color: #fff!important;
+                }
+        }
+        
+    }
+    .fixed{
+        position: fixed;
+        top: 130px;
+        z-index: 1000;
+    }
+    .column-wrapper{
+        .column1{
+            padding:90px 0 60px;
+            .company-pic{
+                float: left;
+                margin-right: 40px;
+            } 
+            .company-intro{
+                // float: left;
+                .name{
+                    margin-top: 10px;
+                    font-family: PingFang-SC-Bold;
+                    font-size: 36px;
+                    line-height: 1em;
+                    letter-spacing: 0px;
+                    color: #333333;
+                }
+                .english{
+                    margin-top: 20px;
+                    font-size: 20px;
+                    line-height: 1em;
+                    letter-spacing: 0px;
+                    color: #999999;
+                }
+                .introduction{
+                    margin-top: 20px;
+                    font-size: 18px;
+                    line-height: 30px;
+                    letter-spacing: 0px;
+                    color: #666666;
+                }
+            }
+        }
+        .column2{
+            padding: 60px 0 50px;
+            .intro{
+                .intro-title{
+                    margin-top: 50px;
+                    font-size: 28px;
+                    line-height: 1em;
+                    letter-spacing: 0px;
+                    color: #333333;
+                }
+                .intro-desc{
+                    margin-top: 20px;
+                    font-size: 18px;
+                    line-height: 30px;
+                    letter-spacing: 0px;
+                    color: #999999;
+                }
+            }
+            .pic{
+                margin-left: 40px;
+            }
+        }
+        .column3{
+            padding-top:60px;
+            .cloumn-row{
+                &:nth-child(1){
+                    .pic{
+                        margin-right: 40px;
+                    }
+                }
+                &:nth-child(2){
+                    margin-top: 88px;
+                    .intro{
+                        padding-top: 20px;
+                        .intro-desc{
+                            &:nth-child(1){
+                                margin-top: 0;
+                            }
+                        }
+                    }
+                    .pic{
+                        margin-left: 40px;
+                    }
+                }
+                .intro{
+                    .intro-title{
+                        padding-top:40px; 
+                        font-size: 28px;
+                        line-height: 1em;
+                        letter-spacing: 0px;
+                        color: #333333;
+                    }
+                    .intro-desc{
+                        margin-top: 20px;
+                        font-size: 18px;
+                        line-height: 30px;
+                        letter-spacing: 0px;
+                        color: #999999;
+                    }
+                }
+            }
+        }
+        .column4{
+            padding: 60px 0 45px;
+            .cloumn-row{
+                .intro{
+                    .intro-title{
+                        padding-top: 0;
+                    }
+                }
+            }
+            
+        }
+        .column5{
+            padding:90px 0 10px; 
+            .column-content {
+                position: relative;
+                margin-top: 50px;
+                .column5-desc{
+                    font-size: 18px;
+                    line-height: 30px;
+                    letter-spacing: 0px;
+                    color: #666666;
+                    text-indent: 2em;
+                    margin-bottom: 90px;
+                }
+                .teacher-swiper-box{
+                    position: relative;
+                    .teacher-swiper {
+                        width: 960px;
+                        margin: 0 auto;
+                        .slide {
+                            .item-teacher {
+                                .teacher-photo {
+                                    float: left;
+                                    margin-right: 50px;
+                                }
+                                .teacher-profile {
+                                    float: left;
+                                    width: 730px;
+                                    letter-spacing: 0px;
+                                    .name {
+                                        margin-top: 20px;
+                                        font-family: PingFang-SC-Bold;
+                                        font-size: 28px;
+                                        line-height: 1em;
+                                        color: #333333;
+                                    }
+                                    .slogan {
+                                        margin-top: 8px;
+                                        font-size: 16px;
+                                        line-height: 1em;
+                                        color: #666666;
+                                    }
+                                    .motto {
+                                        margin-top: 20px;
+                                        font-size: 18px;
+                                        line-height: 30px;
+                                        color: #333333;
+                                        text-align: justify;
+                                    }
+                                }
+                                &:nth-child(2) {
+                                    margin-top: 70px;
+                                }
+                            }
+                        }
+                    }
+                    .swiper-button-next,
+                    .swiper-button-prev {
+                        width: 36px;
+                        height: 36px;
+                        background-color: rgba(255, 255, 255, .4);
+                        outline: none;
+                    }
+                    .swiper-button-next {
+                        right: 0;
+                        background: url("../img/icon1.png")no-repeat;
+                        background-size: cover;
+                    }
+                    .swiper-button-prev {
+                        left: 0;
+                        background: url("../img/icon2.png")no-repeat;
+                        background-size: cover;
+                    }
+                }
+
+            }
+        }
+        .column6{
+            // padding: 100px 0;
+            padding: 30px 0;
+            .column-content{
+                position: relative;
+                margin-top: 60px;
+                .tab-hd{
+                    display: inline-block;
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    .tab{
+                        float: left;
+                        width: 160px;
+                        height: 50px;
+                        line-height: 50px;
+                        font-family: PingFang-SC-Bold;
+                        font-size: 20px;
+                        letter-spacing: 0px;
+                        color: #ffffff;
+                        background-color: #cccccc;
+                        border-radius: 5px;
+                        text-align: center;
+                        cursor: pointer;
+                        &:nth-child(1){
+                            margin-right: 105px;
+                        }
+                    }
+                    .tab-cur{
+                        background-color: #ef6d01;
+                    }
+                }
+                .tab-bd{
+                    padding-top:100px; 
+                    .tab-item{
+                        position: relative;
+                        display: none;
+                        .swiper-container {
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+                        .swiper-slide {
+                          background-size: cover;
+                          background-position: center;
+                          background-color: #000;
+                        }
+                        .gallery-top{
+                            margin: 0 auto;
+                            width: 720px;
+                            height: 480px;
+                        }
+                        .gallery-thumbs{
+                            margin-top: 80px;
+                            position: relative;
+                            width: 1030px;
+                            box-sizing: border-box;
+                            .swiper-slide{
+                                width: 130px;
+                                // height: 87px;
+                                background-color: #000;
+                                &>img{
+                                    width: 100%;
+                                    opacity: .6;
+                                }
+                            }
+                            .swiper-slide-thumb-active{
+                                border: solid 2px #ef6d01!important;
+                                &>img{
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                        .thumbs-container{
+                            position: relative;
+                            .swiper-button-next,
+                            .swiper-button-prev {
+                                width: 18px;
+                                height: 32px;
+                                outline: none;
+                                background-color: rgba(255, 255, 255, .4);
+                            }
+                            .swiper-button-next {
+                                right: 0;
+                                background: url("../img/icon5.png")no-repeat;
+                                background-size: cover;
+                            }
+                            .swiper-button-prev {
+                                left: 0;
+                                background: url("../img/icon6.png")no-repeat;
+                                background-size: cover;
+                            }
+                        }
+                    }
+                    .tab-item-cur{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    .shallow-bg{
+        background-color: #f9f9f9;
+    }
+    .slide-cur{
+        border: solid 2px #ef6d01!important;
+    }
+    .company-video{
+        margin-top: 20px;
+        &>video{
+            height: 600px;
+        }
+    }
+    .szll{
+        height: 1360px;
+        background: url("../img/img41.png")no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+}
+/* 关于长颈鹿页样式 end */

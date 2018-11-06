@@ -1,0 +1,323 @@
+/*头部导航条、banner轮播及footer公共样式*/
+* {
+  box-sizing: border-box;
+}
+.w1200 {
+  /*版心宽度1200*/
+  width: 1200px;
+  margin: 0 auto;
+}
+.f_l {
+  float: left;
+}
+.f_r {
+  float: right;
+}
+img {
+  vertical-align: middle;
+}
+a {
+  color: #333 !important;
+}
+html {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+body {
+  font-family: PingFang-SC-Regular;
+  font-size: 14px;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-weight: normal;
+}
+input,
+button {
+  outline: none;
+  border: none;
+}
+/*去除苹果移动端按钮默认样式--圆角和渐变色*/
+input[type=submit],
+input[type=reset],
+input[type=button],
+input[type=text],
+input[type=tel],
+input[type=password] {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+textarea {
+  -webkit-appearance: none;
+  border-radius: 0;
+  border: none;
+  outline: none;
+  resize: none;
+  font-weight: 400;
+}
+input::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #999;
+}
+input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #999;
+}
+input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #999;
+}
+input:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #999;
+}
+.special-font {
+  font-family: PingFang-SC-Medium;
+}
+/*清除浮动*/
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+/* IE6、7 专有 */
+.clearfix {
+  *zoom: 1;
+}
+.bg {
+  text-align: center;
+}
+.top-nav {
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+  background-color: #ef6d01;
+  box-shadow: 0px 0px 2px 0 rgba(0, 0, 0, 0.3);
+}
+.top-nav .nav-bar {
+  position: relative;
+  height: 100%;
+}
+.top-nav .nav-bar .logo {
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  z-index: 2;
+}
+.top-nav .nav-bar .r-nav {
+  float: right;
+}
+.top-nav .nav-bar .r-nav .nav-item {
+  float: left;
+  position: relative;
+  margin-right: 10px;
+  width: 120px;
+  height: 70px;
+  color: #fff;
+}
+.top-nav .nav-bar .r-nav .nav-item:nth-child(6) {
+  margin-right: 0;
+}
+.top-nav .nav-bar .r-nav .nav-item .item-pic {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
+.top-nav .nav-bar .r-nav .nav-item .item_link {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  display: block;
+  height: 35px;
+  line-height: 35px;
+  font-size: 16px;
+  text-align: center;
+  color: #fff!important;
+}
+.top-nav .nav-bar .r-nav .nav-item .menu {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  padding: 2px 0 0;
+  background-color: transparent;
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 0px 0px 5px 5px;
+  overflow: hidden;
+  z-index: 1000;
+}
+.top-nav .nav-bar .r-nav .nav-item .menu .menu_item {
+  width: 120px;
+  text-align: center;
+  background-color: #fa9a00;
+}
+.top-nav .nav-bar .r-nav .nav-item .menu .menu_item > a {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  color: #fff!important;
+}
+.top-nav .nav-bar .r-nav .nav-item .menu:nth-child(1) {
+  margin-top: 0;
+}
+.top-nav .nav-bar .r-nav .nav-item .menu_item_cur .menu_item_link {
+  background-color: #ef6d01;
+}
+.top-nav .nav-bar .r-nav .item-current .item_link {
+  background-color: #fc9010;
+  border-radius: 8px;
+}
+.banner {
+  position: relative;
+  text-align: center;
+}
+.banner .swiper-container .swiper-slide {
+  text-align: center;
+}
+.banner .swiper-container .swiper-slide .slide {
+  display: inline-block;
+  position: relative;
+}
+.banner .swiper-container .swiper-slide .slide > img {
+  width: 100%;
+}
+.banner .swiper-container .swiper-slide .slide .home-banner-desc {
+  position: absolute;
+  bottom: 147px;
+  left: 366px;
+  font-weight: 300;
+}
+.banner .swiper-container .swiper-slide .slide .home-banner-desc .zy-btn {
+  display: block;
+  width: 160px;
+  height: 50px;
+  line-height: 50px;
+  font-family: PingFang-SC-Bold;
+  font-size: 20px;
+  color: #fff !important;
+  background-color: #ef6d01;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.banner .swiper-container .swiper-pagination .swiper-pagination-bullet {
+  width: 80px;
+  height: 6px;
+  background-color: #ffffff;
+  border-radius: 3px;
+  opacity: 0.38;
+}
+.banner .swiper-container .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #f7faff;
+  opacity: 1;
+}
+.banner .swiper-container .swiper-button-next,
+.banner .swiper-container .swiper-button-prev {
+  display: none;
+  width: 60px;
+  height: 80px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.banner .swiper-container .swiper-button-next {
+  right: 0;
+  background: url("../img/icon_arr.png") no-repeat;
+  background-position-x: -60px;
+  background-size: cover;
+}
+.banner .swiper-container .swiper-button-prev {
+  left: 0;
+  background: url("../img/icon_arr.png") no-repeat;
+  background-size: cover;
+}
+.banner .title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  font-style: italic;
+  color: #ffffff;
+}
+.main .column-wrapper .column {
+  padding-top: 100px;
+}
+.main .column-wrapper .column .title {
+  font-family: PingFang-SC-Bold;
+  font-size: 36px;
+  line-height: 1em;
+  letter-spacing: 0px;
+  color: #333;
+  text-align: center;
+}
+.main .column-wrapper .column .subtitle {
+  margin-top: 20px;
+  font-size: 24px;
+  line-height: 1em;
+  color: #999;
+  text-align: center;
+}
+.footer {
+  height: 450px;
+  padding-top: 70px;
+  background: url("../img/foot.jpg") no-repeat;
+  background-position: center center;
+}
+.footer .content {
+  letter-spacing: 1px;
+  color: #fff;
+}
+.footer .content .left {
+  float: left;
+}
+.footer .content .left .company {
+  font-size: 24px;
+  color: #fff;
+}
+.footer .content .left .company-info {
+  margin-top: 30px;
+  font-size: 16px;
+  line-height: 36px;
+  letter-spacing: 0;
+  color: #ffffff;
+}
+.footer .content .left .company-info .school-addr .name {
+  float: left;
+}
+.footer .content .left .company-info .school-addr .addr {
+  float: left;
+}
+.footer .content .left .copyright {
+  margin-top: 30px;
+  font-size: 18px;
+  color: #fff;
+}
+.footer .content .left .copyright > a {
+  color: #fff !important;
+}
+.footer .content .right-qrcode {
+  float: right;
+}
+.footer .content .right-qrcode .title {
+  margin-top: 5px;
+  font-family: PingFang-SC-Bold;
+  font-size: 24px;
+}
+.footer .content .right-qrcode .qrcode {
+  display: inline-block;
+  background-color: #000;
+  margin-top: 30px;
+}
+.footer .content .right-qrcode .qrcode > img {
+  opacity: .7;
+  transition: all .3s;
+}
+.footer .content .right-qrcode .qrcode:hover > img {
+  opacity: 1;
+}
