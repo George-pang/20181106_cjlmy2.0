@@ -1,0 +1,84 @@
+/* hvr-pulse-grow */
+@-webkit-keyframes hvr-pulse-grow {
+    to {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1)
+    }
+}
+
+@keyframes hvr-pulse-grow {
+    to {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1)
+    }
+}
+
+.hvr-pulse-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0)
+}
+
+.hvr-pulse-grow:active,
+.hvr-pulse-grow:focus,
+.hvr-pulse-grow:hover {
+    -webkit-animation-name: hvr-pulse-grow;
+    animation-name: hvr-pulse-grow;
+    -webkit-animation-duration: .6s;
+    animation-duration: .6s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate
+}
+
+/* hvr-float-shadow */
+.hvr-float-shadow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-duration: .6s;
+    transition-duration: .6s;
+    -webkit-transition-property: transform;
+    transition-property: transform
+}
+
+.hvr-float-shadow:before {
+    pointer-events: none;
+    position: absolute;
+    z-index: -1;
+    content: '';
+    top: 100%;
+    left: 5%;
+    height: 10px;
+    width: 90%;
+    opacity: 0;
+    background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, .35) 0, rgba(0, 0, 0, 0) 80%);
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, .35) 0, rgba(0, 0, 0, 0) 80%);
+    -webkit-transition-duration: .6s;
+    transition-duration: .6s;
+    -webkit-transition-property: transform, opacity;
+    transition-property: transform, opacity
+}
+
+.hvr-float-shadow:active,
+.hvr-float-shadow:focus,
+.hvr-float-shadow:hover {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px)
+}
+
+.hvr-float-shadow:active:before,
+.hvr-float-shadow:focus:before,
+.hvr-float-shadow:hover:before {
+    opacity: 1;
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px)
+}
