@@ -75,7 +75,7 @@
 }
 .about_main .fixed {
   position: fixed;
-  top: 130px;
+  top: 200px;
   z-index: 1000;
 }
 .about_main .column-wrapper .column1 {

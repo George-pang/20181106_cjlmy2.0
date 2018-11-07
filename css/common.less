@@ -131,6 +131,10 @@ input:-ms-input-placeholder {
             bottom: 20px;
             z-index: 2;
         }
+        .pos-center{
+            bottom: 50%;
+            transform: translateY(50%);
+        }
         .r-nav {
             float: right;
             .nav-item {
@@ -206,6 +210,13 @@ input:-ms-input-placeholder {
             }
         }
     }
+}
+.fix-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
 }
 
 .banner {

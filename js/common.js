@@ -49,6 +49,24 @@ $(function () {
     backCurTab(".nav-item-contact",".contact_item","menu_item_cur",contactIndex);
     /* 子菜单显示隐藏 end */
 
+    /* 顶部固定导航 */
+    $(window).on("scroll",function(){
+        var toTop=$(this).scrollTop();
+        var cTop=$(".top-container .bg").height();
+        if(toTop>=cTop){
+            $(".top-nav").addClass("fix-nav");
+            // $(".top-nav .logo").addClass("pos-center").find("img").attr("src","img/logo3.png");
+            $(".banner-pic").css("margin-top","70px");
+        }else{
+            $(".top-nav").removeClass("fix-nav");
+            $(".banner-pic").css("margin-top",0);
+            // $(".top-nav .logo").removeClass("pos-center").find("img").attr("src","img/logo2.png");
+            if(!$(".firstPage")){
+            $("body").css("padding-top",0);
+            }
+        }
+    });
+
     /* swiper start*/
     // 初始化swiper      
     var mySwiper = new Swiper('#swiper1', {

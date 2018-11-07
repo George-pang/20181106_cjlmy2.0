@@ -1,9 +1,11 @@
 $(function () {
     /* 侧边导航栏 start */
         $(".index-aside-nav .tab").eq(0).on("click",function(){
+            $(".kczy-container").hide();
             $(".form-container").show();
         });
         $(".index-aside-nav .tab").eq(1).on("click",function(){
+            $(".form-container").hide();
             $(".kczy-container").show();
         });
         $(".index-aside-nav .tab").eq(2).on("click",function(){

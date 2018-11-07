@@ -1,10 +1,10 @@
 
 $(function () {
     /* 侧边导航栏 start*/
-    // var nav_height = $(".top-nav").height();
-    var cTop_1 = $("#nav1").offset().top;
-    var cTop_2 = $("#nav2").offset().top;
-    var cTop_3 = $("#nav3").offset().top;
+    var nav_height = $(".top-nav").height();
+    var cTop_1 = $("#nav1").offset().top-nav_height;
+    var cTop_2 = $("#nav2").offset().top-nav_height;
+    var cTop_3 = $("#nav3").offset().top-nav_height;
     console.log(cTop_1, cTop_2, cTop_3);
 
     $(window).on("scroll", function () {

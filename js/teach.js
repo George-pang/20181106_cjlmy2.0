@@ -1,12 +1,12 @@
 $(function () {
 
     /* 侧边导航栏 start*/
-    // var nav_height = $(".top-nav").height();
-    var cTop = $(".main").offset().top;
-    var cTop_1 = $("#nav1").offset().top;
-    var cTop_2 = $("#nav2").offset().top;
-    var cTop_3 = $("#nav3").offset().top;
-    var cTop_4 = $("#nav4").offset().top;
+    var nav_height = $(".top-nav").height();
+    var cTop = $(".main").offset().top - nav_height;
+    var cTop_1 = $("#nav1").offset().top - nav_height;
+    var cTop_2 = $("#nav2").offset().top - nav_height;
+    var cTop_3 = $("#nav3").offset().top - nav_height;
+    var cTop_4 = $("#nav4").offset().top - nav_height;
     $(window).on("scroll", function () {
         var toTop = $(this).scrollTop();
         // 固定定位切换

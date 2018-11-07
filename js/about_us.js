@@ -1,10 +1,10 @@
 $(function () {
     /* 侧边导航栏 start*/
-    // var nav_height = $(".top-nav").height();
-    var cTop_1 = $(".gsjj").offset().top;
-    var cTop_2 = $(".xyxq").offset().top;
-    var cTop_3 = $(".szll").offset().top;
-    var cTop_4 = $(".jxhj").offset().top;
+    var nav_height = $(".top-nav").height();
+    var cTop_1 = $(".gsjj").offset().top-nav_height;
+    var cTop_2 = $(".xyxq").offset().top-nav_height;
+    var cTop_3 = $(".szll").offset().top-nav_height;
+    var cTop_4 = $(".jxhj").offset().top-nav_height;
 
     $(window).on("scroll", function () {
         var toTop = $(this).scrollTop();
