@@ -16,9 +16,6 @@
 img {
   vertical-align: middle;
 }
-a {
-  color: #333 !important;
-}
 html {
   overflow-y: scroll;
   overflow-x: hidden;
@@ -315,9 +312,5 @@ input:-ms-input-placeholder {
   margin-top: 30px;
 }
 .footer .content .right-qrcode .qrcode > img {
-  opacity: .7;
-  transition: all .3s;
-}
-.footer .content .right-qrcode .qrcode:hover > img {
   opacity: 1;
 }

@@ -46,7 +46,7 @@ $(function () {
             pageSize: 4,
             // prevText:"上一页",
             // nextText:"下一页",
-            className: 'paginationjs-theme-blue',
+            className: 'paginationjs-theme-yellow',
             callback: function (data, pagination) {
                 var html = simpleTemplating(data);
                 $(selector2).html(html);

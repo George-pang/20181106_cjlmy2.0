@@ -121,8 +121,8 @@
 .contact_main .contact-info .left-info {
   float: left;
   width: 600px;
-  line-height: 40px;
-  font-size: 24px;
+  line-height: 32px;
+  font-size: 18px;
   letter-spacing: 0px;
   color: #333;
 }
@@ -131,11 +131,10 @@
   color: #ef6d01;
 }
 .contact_main .contact-info .left-info .m_t {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 .contact_main .contact-info .right-pic {
   float: right;
-  margin-top: 30px;
 }
 .contact_main .contact-info .right-pic > img {
   width: 100%;
