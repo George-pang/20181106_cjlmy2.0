@@ -1,14 +1,14 @@
 /* 新闻中心页 样式 */
 .news_main .news-container {
-  padding: 90px 0 200px;
+  padding: 40px 0 200px;
 }
 .news_main .news-container .news-nav {
-  position: relative;
   float: left;
   margin-right: 45px;
   width: 235px;
   border: solid 1px #e1e1e1;
   border-radius: 3px 3px 0px 0px;
+  overflow: hidden;
 }
 .news_main .news-container .news-nav .title {
   height: 44px;
@@ -57,16 +57,8 @@
 .news_main .news-container .news-nav .news-nav-hd .nav-tab-cur .tab-txt {
   color: #ef6d01;
 }
-.news_main .news-container .news-nav .pic {
-  position: absolute;
-  top: 5px;
-  left: 0;
-  transform: translateY(-100%);
-}
-.news_main .news-container .fixed {
-  position: fixed;
-  top: 160px;
-  left: 100px;
+.news_main .news-container .news-nav .news-nav-bd {
+  float: left;
 }
 .news_main .news-container .news-nav-bd {
   float: left;
@@ -145,58 +137,4 @@
   letter-spacing: 0px;
   color: #999999;
   text-align: right;
-}
-/* 新闻详情页 */
-.news_details_main .news-container .news-nav {
-  margin-right: 70px;
-}
-.news_details_main .news-container .news-details {
-  float: left;
-  width: 895px;
-  font-family: HiraginoSansGB-W3;
-}
-.news_details_main .news-container .news-details .news-title {
-  font-size: 32px;
-  line-height: 1em;
-  letter-spacing: 0px;
-  color: #333333;
-  text-align: center;
-}
-.news_details_main .news-container .news-details .news-time {
-  margin-top: 20px;
-  text-align: center;
-}
-.news_details_main .news-container .news-details .news-time > span {
-  font-size: 18px;
-  line-height: 1em;
-  letter-spacing: 0px;
-  color: #999999;
-}
-.news_details_main .news-container .news-details .news-summary {
-  margin-top: 25px;
-  padding: 16px 30px;
-  font-size: 18px;
-  line-height: 30px;
-  letter-spacing: 1px;
-  color: #999999;
-  background-color: #f5f5f5;
-}
-.news_details_main .news-container .news-details .news-content {
-  margin-top: 40px;
-  text-align: center;
-}
-.news_details_main .news-container .news-details .news-content :nth-child(1) {
-  margin-top: 0;
-}
-.news_details_main .news-container .news-details .news-content > p {
-  margin-top: 20px;
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: normal;
-  font-stretch: normal;
-  letter-spacing: 0px;
-  color: #666666;
-}
-.news_details_main .news-container .news-details .news-content > img {
-  margin-top: 20px;
 }

@@ -5,15 +5,29 @@
     <meta charset="UTF-8">
     <!-- <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"> -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>长颈鹿美语--联系我们</title>
+    <title>长颈鹿美语--新闻详情页</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/news.css">
+    <link rel="stylesheet" href="css/pagination.css">
     <!-- <link rel="stylesheet" href="css/hover-min.css"> -->
     <script src="js/jquery.js"></script>
     <script src="js/swiper.min.js"></script>
+    <script src="js/pagination.js"></script>
     <script src="js/common.js"></script>
-    <script src="js/contact.js"></script>
+    <script src="js/news.js"></script>
+    <style>
+        .pagination-container {
+            position: absolute;
+            bottom: -80px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .news-nav {
+            margin-right: 70px;
+        }
+    </style>
 </head>
 
 <body>
@@ -60,21 +74,21 @@
                             </div>
                             <div class="menu kc_menu">
                                 <ul>
+                                    <li class="menu_item kc_item"><a class="menu_item_link kc_item_link" href="course_child.html">幼儿启蒙英语</a></li>
                                     <li class="menu_item kc_item menu_item_cur"><a class="menu_item_link kc_item_link"
-                                            href="course_child.html">幼儿启蒙英语</a></li>
-                                    <li class="menu_item kc_item"><a class="menu_item_link kc_item_link" href="course_children.html">儿童进阶英语</a></li>
+                                            href="course_children.html">儿童进阶英语</a></li>
                                     <li class="menu_item kc_item"><a class="menu_item_link kc_item_link" href="course_juvenile.html">少儿强化英语</a></li>
                                     <li class="menu_item kc_item"><a class="menu_item_link kc_item_link" href="course_essence.html">菁英少年英语</a></li>
                                 </ul>
                             </div>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item item-current">
                             <a href="news.html" class="item_link">新闻中心</a>
                             <div class="item-pic">
                                 <img src="img/animal5.png" alt="">
                             </div>
                         </li>
-                        <li class="nav-item nav-item-contact item-current">
+                        <li class="nav-item nav-item-contact">
                             <a href="contact_us.html" class="item_link">联系我们</a>
                             <div class="item-pic">
                                 <img src="img/animal6.png" alt="">
@@ -92,33 +106,57 @@
         </div>
     </div>
     <div class="banner banner-pic">
-        <img src="img/banner14.jpg" alt="">
+        <img src="img/banner13.jpg" alt="">
         <!-- <h3 class="title special-font">长颈鹿动态</h3> -->
     </div>
-    <div class="main contact_main">
-        <div class="w1200 info-container clearfix">
-            <h3 class="title">联系我们</h3>
-            <p class="subtitle special-font">CONTACT US</p>
-            <div class="contact-info clearfix special-font">
-                <div class="left-info">
-                    <p>
-                        <span class="key">学校：</span>长颈鹿美语<br>
-                        <span class="key">电话：</span>400-6666-321; 021-51688986 <br>
-                        <span class="key">邮箱：</span>service@egiraffe.com.cn <br>
-                        <span class="key">旗舰校：</span>徐汇区华山路1751号海斯大厦L3
-                        轨道10号、11号线：交通大学（1号出口）
-                    </p>
-                    <p class="m_t">
-                        <span class="key">中心城校：</span> 徐汇区柳州路99号中星城商场L3
-                        轨道1号、3号线：上海南站（5号出口）
-                    </p>
-                    <p class="m_t">
-                        <span class="key">时光里校：</span>徐汇区瑞平路230号保利时光里L2/009-012
-                        轨道7号、12号线：龙华中路站（5号出口）
-                    </p>
+    <div class="main news_main news_details_main">
+        <div class="w1200 news-container clearfix">
+            <div class="news-nav special-font">
+                <h3 class="title">
+                    <img src="img/icon7.png" alt="">
+                    <span class="txt">新闻中心</span>
+                </h3>
+                <ul class="news-nav-hd">
+                    <li class="nav-tab nav-tab-cur">
+                        <span class="tab-icon"></span>
+                        <span class="tab-txt">中心新闻</span>
+                    </li>
+                    <li class="nav-tab">
+                        <span class="tab-icon"></span>
+                        <span class="tab-txt">活动新闻</span>
+                    </li>
+                    <li class="nav-tab">
+                        <span class="tab-icon"></span>
+                        <span class="tab-txt">下载中心</span>
+                    </li>
+                </ul>
+                <div class="pic">
+                    <img src="img/img51.png" alt="">
                 </div>
-                <div class="right-pic">
-                    <img src="img/contact.png" alt="">
+            </div>
+            <div class="news-details">
+                <h3 class="news-title special-font">2018 Hallowest 狂欢 | 万圣西部夜，不止是酷</h3>
+                <p class="news-time">
+                    <span>
+                        <span class="key">时间：</span><span class="value time">2018/11/01</span>&nbsp;&nbsp;
+                        <span class="key">来源：</span><span class="value source">长颈鹿美语</span>
+                    </span>
+                </p>
+                <p class="news-summary">
+                    童话世界是属于孩子的，只有当你亲临这场Hallowest盛宴时，心里那颗美好的种子才会发芽、生长。
+                </p>
+                <div class="news-content">
+                    <!-- <img src="img/img53.png" alt="">
+                    <p>
+                            有一个地方每年仅有一次机会可以亲身经历<br>
+                            那里有儿童绘本里无法找到的童话故事<br>
+                            有一整夜不曾间断的欢笑和惊喜<br>
+                                被想象守护、似梦境奇妙<br>
+                                那里正是长颈鹿美语<br>
+                                独有的万圣之夜
+                    </p>
+                    <img src="img/img54.png" alt="">
+                    <img src="img/img55.png" alt=""> -->
                 </div>
             </div>
         </div>

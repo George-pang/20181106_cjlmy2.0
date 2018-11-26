@@ -1,18 +1,13 @@
 /*首页 样式*/
+body {
+  padding-top: 0;
+}
 .firstPage {
   height: 100vh;
-}
-.firstPage .top-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 100;
+  padding-top: 280px;
 }
 .firstPage .banner {
-  height: 100vh;
-  padding-top: 280px;
-  box-sizing: border-box;
+  height: 100%;
 }
 .firstPage .banner .swiper-container {
   height: 100%;

@@ -1,5 +1,5 @@
 $(function () {
-    $(".news_page .nav-tab").on("click", function () {
+    $(".nav-tab").on("click", function () {
         $(this).addClass("nav-tab-cur").siblings().removeClass("nav-tab-cur");
         var index = $(this).index();
         $(".bd-item").eq(index).show().siblings().hide();
@@ -39,38 +39,32 @@ $(function () {
         html += '</ul>';
         return html;
     }
-    // 渲染数据并初始化-参数1：分页器选择器，参数2：数据渲染容器选择器,参数3：渲染数据 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    // 渲染数据并初始化,因为此页有三个分页器，所以对渲染数据的代码进行了封装
+    //参数1：分页器选择器，参数2：数据渲染容器选择器,参数3：渲染数据 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     function renderData(selector1, selector2, data) {
         $(selector1).pagination({
             dataSource: data, //数据来源：可以为对象数组--存着每条新闻的数据
             pageSize: 4,
             // prevText:"上一页",
             // nextText:"下一页",
-            className: 'paginationjs-theme-yellow',
+            className: 'paginationjs-theme-blue',
             callback: function (data, pagination) {
                 var html = simpleTemplating(data);
                 $(selector2).html(html);
             }
         })
     }
-    var curIndex=$(".bd-item-cur").index();
-    if(curIndex==0){
-        var data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];//本地假数据
-        renderData("#center-pagination-container", "#center-data-container", data);
-    }else if(curIndex==1){
-        var data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];//本地假数据
-        renderData("#activity-pagination-container", "#activity-data-container", data);
-    }else if(curIndex==2){
-        var data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];//本地假数据
-        renderData("#download-pagination-container", "#download-data-container", data);
-    }
-
-    /* 新闻详情页 start */
-    $(".news_details_main .nav-tab").on("click",function(){
-        var curIndex=$(this).index();
-        location.assign("news.html?id="+curIndex);
-    });
-    /* 新闻详情页 end */
-
-
+    var data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];//本地假数据
+    renderData("#center-pagination-container", "#center-data-container", data);
+    // $('#pagination-container').pagination({
+    //     dataSource: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], //数据来源：可以为对象数组--存着每条新闻的数据
+    //     pageSize: 4,
+    //     // prevText:"上一页",
+    //     // nextText:"下一页",
+    //     className: 'paginationjs-theme-blue',
+    //     callback: function (data, pagination) {
+    //         var html = simpleTemplating(data);
+    //         $('#data-container').html(html);
+    //     }
+    // })
 });

@@ -55,12 +55,10 @@ $(function () {
         var cTop=$(".top-container .bg").height();
         if(toTop>=cTop){
             $(".top-nav").addClass("fix-nav");
-            // $(".top-nav .logo").addClass("pos-center").find("img").attr("src","img/logo3.png");
-            $(".banner-pic").css("margin-top","70px");
+            // $(".banner-pic").css("margin-top","70px");----因为顶部导航初始就改为绝对定位，所以不需要再补上外边距啦
         }else{
             $(".top-nav").removeClass("fix-nav");
-            $(".banner-pic").css("margin-top",0);
-            // $(".top-nav .logo").removeClass("pos-center").find("img").attr("src","img/logo2.png");
+            // $(".banner-pic").css("margin-top",0);
             if(!$(".firstPage")){
             $("body").css("padding-top",0);
             }
